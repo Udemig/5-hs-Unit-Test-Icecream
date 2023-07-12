@@ -6,7 +6,7 @@ const Form = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   return (
-    <form className="my-4 d-flex justify-content-center align-items-center gap-3">
+    <div className="my-4 d-flex justify-content-center align-items-center gap-3">
       <input
         className="form-check-input"
         id="terms"
@@ -16,8 +16,9 @@ const Form = () => {
 
       <div className="terms text-nowrap">
         <p
-          style={{ opacity: isVisible ? 1 : 0 }}
+          style={{ visibility: isVisible ? 'visible' : 'hidden' }}
           className="bg-light rounded p-2 shadow"
+          data-testid="popup"
         >
           Size gerçekten bir şey teslim etmiyeceğiz
         </p>
@@ -35,7 +36,7 @@ const Form = () => {
       >
         Siparişi Onayla
       </button>
-    </form>
+    </div>
   );
 };
 
