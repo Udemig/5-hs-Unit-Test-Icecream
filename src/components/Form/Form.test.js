@@ -2,7 +2,7 @@ import { fireEvent, render, screen } from '@testing-library/react';
 import Form from './Form';
 import userEvent from '@testing-library/user-event/';
 
-test('koşulların onaylanmasını göre sbuton aktifliği', async () => {
+test('koşulların onaylanmasını göre buton aktifliği', async () => {
   render(<Form />);
 
   // user'ın kurulumunu yapma
